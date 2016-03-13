@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="../ajax.min.js"></script>
+        <link href="../editor.css" type="text/css" rel="stylesheet" media="all" />
+        <script>
+            function runServerSide(url) {
+                get(url);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            function idMethod() {
+	           return window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
+            }
+            var projectId = idMethod();
+            if ((projectId === window.location.href) || (projectId ===  "")) {
+                /*
+                For farther development;
+                Opening/Creating projects isn't developed yet
+                */
+                projectId = Math.floor(Math.random() * 100000000)
+                window.location.replace("#" + projectId)
+            } else {
+                // Same as above
+            }
+        </script>
+        <div id="menus">
+            <a href="../.." id="home-btn">NetElement</a><a href="#" id="file-menu">File</a><a href="#" id="edit-menu">Edit</a><a href="#" id="share-menu">Share</a><a href="#" id="help-btn">Help</a>
+        </div>
+        <div id="ctrl-btns">
+            <a href="#" id="player-view">Preview in player!</a>
+            <script>
+                $('#player-view').attr("href", "../player" + projectId)
+            </script>
+        </div>
+    </body>
+</html>

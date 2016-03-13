@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:600,700);
+body {
+    background-color: aquamarine;
+}
+div#menus {
+    background-color: aquamarine;
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a#home-btn {
+    font-family: "Poiret One";
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 900;
+}
+a#file-menu {
+    font-family: "Source Code Pro";
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    vertical-align: center;
+}
