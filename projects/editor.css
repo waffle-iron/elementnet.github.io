@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700);
 body {
     background-color: aquamarine;
 }
@@ -9,19 +9,55 @@ div#menus {
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: inline-block;
 }
 a#home-btn {
     font-family: "Poiret One";
     color: white;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 900;
 }
-a#file-menu {
+a#file-menu, a#edit-menu, a#share-menu, a#help-btn {
     font-family: "Source Code Pro";
     color: white;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-weight: 600;
-    vertical-align: center;
+    margin-left: 20px;
+}
+div#ctrl-btns {
+    display: inline-block;
+    float: right;
+}
+a#player-view {
+    text-decoration: none;
+    color: white;
+    background-color: darkcyan;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.3em;
+    font-family: "Poiret One", "Source Code Pro";
+}
+li.menuitem {
+    font-family: "Source Code Pro";
+    font-weight: 400;
+    font-size: 0.8em;
+    width: 100px;
+    height: 32px;
+}
+#file-options {
+    margin-left: 100px;
+    display: inline-block;
+}
+a.menubtn {
+    text-decoration: none;
+    color: black;
+}
+div.non-editable-file {
+    cursor: not-allowed;
+}
+#edit-options {
+    margin-left: 175px;
+    display: inline-block;
 }
