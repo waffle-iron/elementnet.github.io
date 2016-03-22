@@ -34,6 +34,11 @@
         </script>
     </head>
     <body>
+    	<script>
+    		if (window.location.href.slice(0,4) === "http:") {
+    		    window.location.replace("https" + window.location.href.slice(5));
+    		}
+    	</script>
         <div id="menus">
             <a href="../.." id="home-btn">NetElement</a><a href="javascript:void(0)" id="file-menu">File</a><!-- href's are javascript:void(0), because href=# would delete the project ID --><a href="javascript:void(0)" id="edit-menu">Edit</a><a href="javascript:void(0)" id="share-menu" style="cursor:not-allowed">Share</a><a href="../../help/editor" id="help-btn" target="_blank">Help</a>
         </div>
