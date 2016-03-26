@@ -1,5 +1,5 @@
 # ElementNetwork
-[![Build Status](https://img.shields.io/badge/build-never_built-lightgrey)](#)
+[![Build Status](https://img.shields.io/badge/build-never_built-lightgrey.svg)](#)
 
 **Editor (Frontend): <https://elementnet.github.io/projects/editor/>**
 
