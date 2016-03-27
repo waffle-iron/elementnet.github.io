@@ -113,5 +113,27 @@
                 }
             })
         </script>
+        <script>
+            var categories = {}
+            function Block(type, spec, text, category, descriptor) {
+                this.type = type;
+                this.spec = spec;
+                this.text = text;
+                this.category = category;
+                if (descriptor.parameterNameDefaults) {
+                    this.paramaterNameDefaults = descriptor.parameterNameDefaults;
+                }
+                if (descriptor.buttonLeft) {
+                    this.buttonLeft = descriptor.buttonLeft;
+                }
+                if (descriptor.buttonRight) {
+                    this.buttonRight = descriptor.buttonRight;
+                }
+                this.desc = descriptor
+                this.element = document.createElement("canvas");
+                $(this.element).attr("id", spec).attr("class", "block");
+                
+            }
+        </script>
     </body>
 </html>
