@@ -1,4 +1,4 @@
-# ElementNetwork
+# ElementNetwork℠
 [![Build Status](https://img.shields.io/badge/build-never_built-lightgrey.svg)](#)
 [![Gitter](https://img.shields.io/gitter/room/elementnet/chat.svg)](https://gitter.im/elementnet/chat)
 
