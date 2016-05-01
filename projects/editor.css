@@ -47,7 +47,7 @@ li.menuitem {
     height: 32px;
 }
 #file-options {
-    margin-left: 160px;
+    margin-left: 180px;
     display: inline-block;
 }
 a.menubtn {
@@ -58,6 +58,6 @@ div.non-editable-file {
     cursor: not-allowed;
 }
 #edit-options {
-    margin-left: 235px;
+    margin-left: 255px;
     display: inline-block;
 }
