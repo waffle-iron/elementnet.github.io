@@ -1,0 +1,21 @@
+{
+  "name": "ElementNetwork",
+  "version": "0.1",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "scripts": {},
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elementnet/elementnet.github.io"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "license": "Apache"
+}
