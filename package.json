@@ -1,6 +1,6 @@
 {
   "name": "ElementNetwork",
-  "version": "0.1",
+  "version": "0.2.5",
   "engines": {
     "node": "5.9.1"
   },
