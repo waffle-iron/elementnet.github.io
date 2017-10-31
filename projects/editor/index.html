@@ -1,8 +1,13 @@
+<!-- 
+ElementNetwork Editor
+Copyright (c) 2016 ElementNetwork
+License: MIT
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script src="../ajax.min.js"></script>
         <script src="../../keys.min.js"></script>
         <link href="../editor.css" type="text/css" rel="stylesheet" media="all" />
@@ -35,7 +40,7 @@
     </head>
     <body>
     	<script>
-    		if (window.location.href.slice(0,5) === "http:") {
+    		if (window.location.protocol === "http" && window.location.slice(0, 10) === "http://ele") {
     		    window.location.replace("https" + window.location.href.slice(4));
     		}
     	</script>
@@ -57,7 +62,7 @@
             var editMenu = $("#edit-options").attr("style", "list-style-type:none").text("").hide();
             var shareMenu = $("#share-options").attr("style", "list-style-type:none").text("").hide();
             document.getElementById("file-options").innerHTML = "<a class='menubtn' href=javascript:void(0)><li class='menuitem'>New...</li></a><a class='menubtn' href=javascript:void(0)><li class='menuitem' style='border-bottom: 1px solid black;border-collapse:collapse;cursor:not-allowed;color:grey'>Save</li></a><a class='menubtn' href=javascript:void(0)><li class='menuitem' style='border-top: 1px solid black;border-collapse:collapse'>Download</li></a><a class='menubtn' href=javascript:void(0)><li class='menuitem' style='border-bottom: 1px solid black;border-collapse:collapse'>Upload</li></a><a class='menubtn' href=javascript:void(0)><li class='menuitem' style='border-top: 1px solid black;border-collapse:collapse'>Compile...</li></a>";
-            document.getElementById("edit-options").innerHTML = "<a class='menubtn' href='javascript:void(0)'><li class='menuitem' id='toggle-update-edit'>Disable auto-update...</li></a><a class='menubtn' href='javascript:void(0)'><li class='menuitem' id='update-edit' style='cursor:not-allowed;color:grey'>Update</li></a>"
+            document.getElementById("edit-options").innerHTML = "<a class='menubtn' href='javascript:void(0)'><li class='menuitem' id='toggle-update-edit'>Disable auto-update...</li></a><a class='menubtn' href='javascript:void(0)'><li class='menuitem' id='update-edit' style='cursor:not-allowed;color:grey'>Update</li></a>";
             $(".menuitem").hover(function (event) {
                 $(event.currentTarget).css({
                     "background-color": "LightGrey"
@@ -118,27 +123,8 @@
                 }
             })
         </script>
-        <script>
-            var categories = {}
-            function Block(type, spec, text, category, descriptor) {
-                this.type = type;
-                this.spec = spec;
-                this.text = text;
-                this.category = category;
-                if (descriptor.parameterNameDefaults) {
-                    this.paramaterNameDefaults = descriptor.parameterNameDefaults;
-                }
-                if (descriptor.buttonLeft) {
-                    this.buttonLeft = descriptor.buttonLeft;
-                }
-                if (descriptor.buttonRight) {
-                    this.buttonRight = descriptor.buttonRight;
-                }
-                this.desc = descriptor
-                this.element = document.createElement("canvas");
-                $(this.element).attr("id", spec).attr("class", "block");
-                
-            }
+        <script src="../editor.js">
+            doThis(jQuery)
         </script>
     </body>
 </html>
