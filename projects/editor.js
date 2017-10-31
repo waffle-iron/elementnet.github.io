@@ -3,7 +3,7 @@ function doThis($) {
     /*
     ElementNet Block Engine
     Copyright (c) 2016 ElementNetwork
-    License: MIT
+    License: Apache 2.0
     */
             
     /*
@@ -71,7 +71,7 @@ function doThis($) {
     
     }
     Block.prototype.render = function () {
-    
+        return this;
     };
     window.htmlScript = function () {
         categories = {'': []};
