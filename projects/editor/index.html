@@ -27,14 +27,14 @@ License: MIT
             }
             var projectId = idMethod();
             if ((projectId === window.location.href) || (projectId ===  "")) {
-                /*
-                For farther development;
-                Opening/Creating projects isn't developed yet
-                */
-                projectId = Math.floor(Math.random() * 100000000)
+                projectId = localStorage.length
                 window.location.replace("#" + projectId)
+                localStorage[projectId] = {"foo":"bar"};
             } else {
-                // Same as above
+                if (!localStorage.[projectId]) {
+                    window.location.replace("#");
+                    window.location.reload();
+                }
             }
         </script>
     </head>
