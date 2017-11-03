@@ -28,6 +28,7 @@ a#file-menu, a#edit-menu, a#share-menu, a#help-btn {
 }
 div#ctrl-btns {
     display: inline-block;
+    float: right;
 }
 a#player-view {
     text-decoration: none;
