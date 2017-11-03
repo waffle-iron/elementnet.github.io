@@ -28,6 +28,7 @@ a#file-menu, a#edit-menu, a#share-menu, a#help-btn {
 }
 div#ctrl-btns {
     display: inline-block;
+    float: right;
 }
 a#player-view {
     text-decoration: none;
@@ -37,7 +38,6 @@ a#player-view {
     padding: 5px 5px 5px 5px;
     font-size: 1.3em;
     font-family: "Poiret One", "Source Code Pro";
-    float: right;
 }
 li.menuitem {
     font-family: "Source Code Pro";
