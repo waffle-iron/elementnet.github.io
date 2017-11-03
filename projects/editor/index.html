@@ -31,7 +31,7 @@ License: MIT
                 window.location.replace("#" + projectId)
                 localStorage[projectId] = {"foo":"bar"};
             } else {
-                if (!localStorage.[projectId]) {
+                if (!localStorage[projectId]) {
                     window.location.replace("#");
                     window.location.reload();
                 }
