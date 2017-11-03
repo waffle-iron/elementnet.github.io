@@ -84,14 +84,24 @@ License: MIT
             menus.file.toggle = false;
             menus.edit.toggle = false;
             menus.share.toggle = false;
+            menus.file.done = false;
+            menus.edit.done = false;
+            menus.share.done = false;
             $('#file-menu').click(function () {
                 if (!menus.file.toggle) {
                     menus.file.toggle = true;
+                    menus.file.done = false;
                     if (menus.edit.toggle) {
                         menus.edit.toggle = false;
+                        while (!menus.edit.done) {
+                            continue;
+                        }
                         $(editMenu).slideUp();
                         setTimeout(function () {$(fileMenu).slideDown()}, 400);
                     } else if (menus.share.toggle) {
+                        while (!menus.share.done) {
+                            continue;
+                        }
                         menus.share.toggle = false;
                         $(shareMenu).slideUp();
                         setTimeout(function () {$(fileMenu).slideDown()}, 400);
@@ -102,15 +112,22 @@ License: MIT
                     menus.file.toggle = false;
                     $(fileMenu).slideUp()
                 }
+                menus.file.done = true;
             })
             $('#edit-menu').click(function () {
                 if (!menus.edit.toggle) {
                     menus.edit.toggle = true;
                     if (menus.file.toggle) {
+                        while (!menus.file.done) {
+                            continue;
+                        }
                         menus.file.toggle = false;
                         $(fileMenu).slideUp();
                         setTimeout(function () {$(editMenu).slideDown()}, 400);
                     } else if (menus.share.toggle) {
+                        while (!menus.share.done) {
+                            continue;
+                        }
                         menus.share.toggle = false;
                         $(shareMenu).slideUp();
                         setTimeout(function () {$(editMenu).slideDown()}, 400);
