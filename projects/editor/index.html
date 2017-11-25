@@ -10,6 +10,7 @@ License: MIT
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script src="../ajax.min.js"></script>
         <script src="../../keys.min.js"></script>
+        <script src="../editor.js"></script>
         <link href="../editor.css" type="text/css" rel="stylesheet" media="all" />
         <script src="../../sleep.min.js"></script>
         <!--[if IE]>
@@ -29,7 +30,7 @@ License: MIT
             if ((projectId === window.location.href) || (projectId ===  "")) {
                 projectId = localStorage.length
                 window.location.replace("#" + projectId)
-                localStorage[projectId] = {"foo":"bar"};
+                localStorage[projectId] = {"foo":"bar", "baz":[1, 2, 3]};
             } else {
                 if (!localStorage[projectId]) {
                     window.location.replace("#");
