@@ -1,0 +1,27 @@
+<!--
+ElementNetwork Player
+Copyright (c) 2017 ElementNetwork
+License: Apache 2.0
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script src="../player.js"></script>
+        <link href="../player.css" type="text/css" rel="stylesheet" media="all" />
+        <title>Project Player &middot; ElementNetwork&#8480;</title>
+    </head>
+    <body ng-app="player">
+        <div id="menus">
+            <a href="../.." id="home-btn">ElementNetwork&#8480;</a><a href="../editor" id="create-btn">Create</a><!-- href's are javascript:void(0), because href=# would delete the project ID --><a href=".." id="explore-btn">Explore</a><a href="../../about" id="about-btn">About</a><a href="../../help" id="help-btn">Help</a>
+        </div>
+        <div id="ctrl-btns">
+            <a href="javascript:void(0)" id="editor-view">See Indside!</a>
+            <script>
+                $('#editor-view').click(function() {window.location = "../editor/#" + projectId})
+            </script>
+        </div>
+        <br />
+    </body>
+</html>

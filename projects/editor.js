@@ -2,7 +2,7 @@ function doThis($) {
     'use strict';
     /*
     ElementNet Block Engine
-    Copyright (c) 2016 ElementNetwork
+    Copyright (c) 2017 ElementNetwork
     License: Apache 2.0
     */
             

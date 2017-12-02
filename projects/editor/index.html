@@ -1,6 +1,6 @@
 <!-- 
 ElementNetwork Editor
-Copyright (c) 2016 ElementNetwork
+Copyright (c) 2017 ElementNetwork
 License: Apache 2.0
 -->
 <!DOCTYPE html>
@@ -8,19 +8,8 @@ License: Apache 2.0
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <script src="../ajax.min.js"></script>
-        <script src="../../keys.min.js"></script>
         <script src="../editor.js"></script>
         <link href="../editor.css" type="text/css" rel="stylesheet" media="all" />
-        <script src="../../sleep.min.js"></script>
-        <!--[if IE ]>
-            <meta http-equiv="refresh" content="1; url=../../unsupported-browser.htm" />
-        <![endif]-->
-        <script>
-            function runServerSide(url) {
-                get(url);
-            }
-        </script>
         <title>Project Editor &middot; ElementNetwork&#8480;</title>
         <script>
             function idMethod() {
@@ -30,7 +19,7 @@ License: Apache 2.0
             if ((projectId === window.location.href) || (projectId ===  "")) {
                 projectId = localStorage.length
                 window.location.replace("#" + projectId)
-                localStorage[projectId] = {"foo":"bar", "baz":[1, 2, 3]};
+                localStorage[projectId] = {"name":"untitled"};
             } else {
                 if (!localStorage[projectId]) {
                     window.location.replace("#");
@@ -39,7 +28,7 @@ License: Apache 2.0
             }
         </script>
     </head>
-    <body>
+    <body ng-app="editor">
     	<script>
     		if (window.location.protocol === "http" && window.location.slice(0, 10) === "http://ele") {
     		    window.location.replace("https" + window.location.href.slice(4));

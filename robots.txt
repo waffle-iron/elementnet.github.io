@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /projects/
-Allow: /projects/editor/
+Disallow: /projects
+Allow: /projects/player
 Disallow: /LICENSE.txt
+Disallow: /humans.txt
+Disallow: /hacker.txt

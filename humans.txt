@@ -1,0 +1,2 @@
+ElementNetwork was created by MegaCode18, and the full list of contributors can be found on the GitHub page.
+ElementNetwork is a spin-off of Scratch by MIT, designed for web languages.
