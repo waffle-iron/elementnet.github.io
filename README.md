@@ -4,7 +4,7 @@
 [![GitHub release](https://img.shields.io/github/release/elementnet/elementnet.github.io.svg)](https://github.com/elementnet/elementnet.github.io/releases)
 [![Waffle.io](https://img.shields.io/waffle/label/elementnet/elementnet.github.io/in%20progress.svg)](https://waffle.io/elementnet/elementnet.github.io)
 
-**Editor (Frontend): <https://elementnet.github.io/projects/editor/>**
+**Editor (Front-end): <https://elementnet.github.io/projects/editor/>**
 
 ElementNetwork is a block-based HTML/CSS/JS editor.
 
