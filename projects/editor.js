@@ -39,7 +39,7 @@ function doThis($) {
     Math.PI, Math.E, and Math.pow (Escapable by doing something like `Math..PI`)
     Use doubling as an escape code, and a pound character (#) to escape doubling (see === operators for example); DO NOT forget to pound-escape characters that shouldn't be escaped (such as `<<ab#br>>`), and characters that have already been escaped (such as `<<!!DOCTYPE html PUBLIC "-//#//W3C//#//DTD HTML 4.01 Frameset//#//EN" "ht#tp://#//www.w3.org//TR//html4//DTD//frameset.dtd"`). Example, escaping the dollar sign ($) (in PHP):
     (new Block('r', 'readVariable', ['variable %s', '$%s'], 'Data', {
-        code: "$$$1",
+        code: "$$#$1",
         hidden: false,
         movable: true,
     })).render();
@@ -73,13 +73,18 @@ function doThis($) {
     Block.prototype.render = function () {
         return this;
     };
+    Block.prototype.execute = function () {
+        return this;
+    }
     window.htmlScript = function () {
         categories = {'': []};
         menus = {
-            doctypes: ['HTML5', 'HTML 4.01 Transitional', 'HTML 4.01 Frameset', 'HTML 4.01 Strict', 'HTML 3.0', 'HTML 2.0', 'HTML 1.0', 'XHTML5', 'XHTML 1.0 Transitional', 'XHTML 1.0 Frameset', 'XHTML 1.0 Strict', 'XHTML 1.1']
+
         };
-        (new Block('c', 'doctype', ['document type: %m.doctypes', '<!DOCTYPE %m.doctypes>'], '', {
-            code: '<<!!DOCTYPE html($1===HTML5?: PUBLIC ($1===HTML 4.01 Transitional?"-//#//W3C//#//DTD HTML 4.01 Transitional//#//EN" "http:://#//www..w3..org//"))>>'
+        (new Block('h', 'doctype', ['document type: HTML 5.0', '<!DOCTYPE html>'], '', {
+            code: '<<!!DOCTYPE html>>',
+            hidden: 'true',
+            moveable: 'false'
         })).render();
     };
 }
