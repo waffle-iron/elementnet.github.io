@@ -3,4 +3,4 @@ Disallow: /projects
 Allow: /projects/player
 Disallow: /LICENSE.txt
 Disallow: /humans.txt
-Disallow: /hacker.txt
+Disallow: /hackers.txt
