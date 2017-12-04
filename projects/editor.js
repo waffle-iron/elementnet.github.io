@@ -44,7 +44,7 @@ Use doubling as an escape code, and a pound character (#) to escape doubling (se
 Usage of this block:
 {variable [myVariable]} --> `$myVariable`
 */
-function doThis($) {
+function initBlocks($) {
     'use strict';
     (function () {
         return;
