@@ -44,12 +44,12 @@ Use doubling as an escape code, and a pound character (#) to escape doubling (se
 Usage of this block:
 {variable [myVariable]} --> `$myVariable`
 */
-function initBlocks($) {
+function initBlocks($) { // eslint-disable-line
     'use strict';
     (function () {
         return;
     }());
-    var categories = {}, menus = {};
+    var categories = {}, menus = {}; // eslint-disable-line
     function Block(type, spec, text, category, descriptor) {
         this.html = descriptor.html;
         this.type = type;
@@ -68,20 +68,18 @@ function initBlocks($) {
         this.desc = descriptor;
         this.element = document.createElement("canvas");
         $(this.element).data("spec", spec).addClass("block");
-    
+
     }
     Block.prototype.render = function () {
         return this;
     };
     Block.prototype.execute = function () {
-        
+
         return this;
     }
     window.htmlScript = function () {
         categories = {'': []};
-        menus = {
-
-        };
+        menus = {};
         (new Block('h', 'doctype', ['document type: HTML 5.0', '<!DOCTYPE html>'], '', {
             code: '<<!!DOCTYPE html>>',
             hidden: 'true',
