@@ -46,7 +46,7 @@ module.exports = {
         "dot-location": "error",
         "dot-notation": "error",
         "eol-last": [
-            "error",
+            "off",
             "never"
         ],
         "eqeqeq": "error",
