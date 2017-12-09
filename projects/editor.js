@@ -7,7 +7,7 @@ License: Apache 2.0
 /*
 HOW TO CREATE BLOCKS
 ********************
-Example code: (new Block('', 'embedJavaScript', ['JavaScript from url: %s', '<script src=%s><\/script>'], 'Code', {
+Example code: (new Block('', 'embedJavaScript', 'JavaScript from url: %s', 'Code', {
     code: "<<script src=$1>><<\/script>>", // Escaped; see below
     hidden: false,
     movable: true,
@@ -80,7 +80,7 @@ function initBlocks($) { // eslint-disable-line
     window.htmlScript = function () {
         categories = {'': []};
         menus = {};
-        (new Block('h', 'doctype', ['document type: HTML 5.0', '<!DOCTYPE html>'], '', {
+        (new Block('h', 'doctype', 'document type: HTML 5.0', '', {
             code: '<<!!DOCTYPE html>>',
             hidden: 'true',
             moveable: 'false'
