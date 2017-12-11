@@ -225,7 +225,7 @@ module.exports = {
         "require-await": "error",
         "require-jsdoc": "off",
         "rest-spread-spacing": "error",
-        "semi": "off",
+        "semi": "warn",
         "semi-spacing": "error",
         "semi-style": [
             "error",
