@@ -8,7 +8,7 @@ License: Apache 2.0
 HOW TO CREATE BLOCKS
 ********************
 Example code: (new Block('', 'embedJavaScript', 'JavaScript from url: %s', 'Code', {
-    code: "<<script src=$1>><<\/script>>", // Escaped; see below
+    code: "<<script src=$1>><<\/\/script>>", // Escaped; see below
     hidden: false,
     movable: true,
 })).render();
