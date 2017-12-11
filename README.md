@@ -1,4 +1,4 @@
-# ElementNetwork℠
+# ElementNetwork™
 [![license](https://img.shields.io/github/license/elementnet/elementnet.github.io.svg)](https://elementnet.github.io/LICENSE.txt)
 [![Gitter](https://img.shields.io/gitter/room/elementnet/chat.svg)](https://gitter.im/elementnet/chat)
 [![GitHub release](https://img.shields.io/github/release/elementnet/elementnet.github.io.svg)](https://github.com/elementnet/elementnet.github.io/releases)
@@ -11,4 +11,4 @@
 
 ElementNetwork is a block-based HTML/CSS/JS editor.
 
-ElementNetwork℠ is a service mark of ElementNetwork Co.
+ElementNetwork™ is a trade mark of ElementNetwork Co.
