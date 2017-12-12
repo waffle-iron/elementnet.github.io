@@ -7,7 +7,6 @@
 
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/bt291yopiehptf1e?svg=true)](https://ci.appveyor.com/project/Code-Lyoko/elementnet-github-io)
 [![Codeship](https://img.shields.io/codeship/ebfabab0-c0fe-0135-0e80-2a7d302f47bf.svg)](https://app.codeship.com/projects/260260)
-[![CircleCI](https://img.shields.io/circleci/project/github/elementnet/elementnet.github.io.svg)](https://circleci.com/gh/elementnet/elementnet.github.io)
 
 **Editor (Front-end): <https://elementnet.github.io/projects/editor/>**
 
