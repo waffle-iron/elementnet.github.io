@@ -1,5 +1,7 @@
+coveralls = require("coveralls");
 $ = require("jquery");
 fs = require("fs");
+coveralls.wear();
 fs.readFile("projects/player.js", function(err, data) {
   eval(data);
 })
