@@ -1,3 +1,5 @@
 {
-  "test": "test.js"
+  "test": "test.js",
+  "repository": "https://github.com/elementnet/elementnet.github.io.git",
+  "license": "Apache-2.0"
 }
