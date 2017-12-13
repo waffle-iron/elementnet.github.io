@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/elementnet/elementnet.github.io.png?columns=all)](https://waffle.io/elementnet/elementnet.github.io?utm_source=badge)
 # ElementNetwork™ (Alpha)
 [![License](https://img.shields.io/github/license/elementnet/elementnet.github.io.svg)](https://elementnet.github.io/LICENSE.txt)
 [![Gitter](https://img.shields.io/gitter/room/elementnet/chat.svg)](https://gitter.im/elementnet/chat)
